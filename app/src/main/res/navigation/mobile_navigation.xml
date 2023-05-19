@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_weather_forecast">
+
+    <fragment
+        android:id="@+id/nav_weather_forecast"
+        android:name="com.mpumi.weatherforecastapp.ui.home.WeatherForecastFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_weather_forecast" />
+
+    <fragment
+        android:id="@+id/nav_favorite_weather"
+        android:name="com.mpumi.weatherforecastapp.ui.favoriteweather.FavoriteWeatherFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_favorite_weather" />
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.mpumi.weatherforecastapp.ui.map.MapFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_map" />
+</navigation>
